@@ -13,20 +13,10 @@ const SearchForm = () => {
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
-        
-        if(departureAirport && parkingCheckIn && parkingCheckOut)
-        {
-            alert("Form Submitted")
-        }
-        else{
-            SetErrors({
-                departureAirport:!departureAirport,
-                parkingCheckIn:!parkingCheckIn,
-                parkingCheckOut:!parkingCheckOut
-            })
-        }
-
-        
+        //i'm printing all the data fetched in console just to verify everything works fine
+        console.log(departureAirport);
+        console.log(parkingCheckIn);
+        console.log(parkingCheckOut);
     }
 
     const parkingCheckOutHandler =(e) => {
