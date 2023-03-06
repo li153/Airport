@@ -8,11 +8,12 @@ const SearchForm = () => {
         departureAirport:false,
         parkingCheckIn:false,
         parkingCheckOut:false
-})
+
+    })
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
-       
+        
         if(departureAirport && parkingCheckIn && parkingCheckOut)
         {
             alert("Form Submitted")
